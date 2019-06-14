@@ -2,11 +2,11 @@
   "name": "Food Ninja",
   "short_name": "FoodNinja",
   "start_url": "/index.html",
-  "display": "standalone", // This makes it look like a native phone app.
+  "display": "standalone",
   "background_color": "#FFE9D2",
   "theme_color": "#FFE1C4",
   "orientation": "portrait-primary",
-  "icon": [
+  "icons": [
     {
       "src": "/img/icons/icon-72x72.png",
       "type": "image/png",
