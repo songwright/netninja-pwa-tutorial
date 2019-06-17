@@ -12,7 +12,8 @@ const assets = [
 ];
 // install service worker
 self.addEventListener('install', evt => {
-  // console.log('Service worker has been installed');
+  // Add responses for assets to cache, but wait until caching
+  // is done before installing the service worker.
   evt.waitUntil(
     caches.open(staticCacheName).then(cache => {
       console.log('Caching shell assests');
