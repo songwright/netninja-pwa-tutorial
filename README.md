@@ -2,4 +2,6 @@
 
 The Net Ninja teaches the basics on Progressive Web Apps.
 
-YouTube link: https://youtu.be/4XT23X0Fjfk
+YouTube link: https://youtu.be/AmWj52zw9R8
+
+## Lesso 10 - The 'Activate' Event
