@@ -26,7 +26,18 @@ self.addEventListener('install', evt => {
 // activate service worker
 self.addEventListener('activate', evt => {
   // console.log('Service worker has been activated')
-})
+  // Keys are static caches.
+  evt.waitUntil(
+    caches.keys().then(keys => {
+      // console.log(keys);
+      // This returns an array of promises.
+      return Promise.all(keys
+        .filter(key => key !== staticCacheName)
+        .map(key => caches.delete(key))
+      )
+    })
+  );
+});
 
 // fetch event
 self.addEventListener('fetch', evt => {
