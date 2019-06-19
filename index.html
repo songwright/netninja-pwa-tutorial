@@ -110,7 +110,30 @@
     </form>
   </div>
 
+  <!-- The core Firebase JS SDK is always required and must be listed first -->
+  <script src="https://www.gstatic.com/firebasejs/6.2.0/firebase-app.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/6.2.0/firebase-firestore.js"></script>
+
+  <!-- TODO: Add SDKs for Firebase products that you want to use
+      https://firebase.google.com/docs/web/setup#config-web-app -->
+
+  <script>
+    // Your web app's Firebase configuration
+    var firebaseConfig = {
+      apiKey: "AIzaSyBc5_cEXQQHYWjTh_Mm1Ocz0sRuTpJPBGA",
+      authDomain: "netninja-pwa-tutorial.firebaseapp.com",
+      databaseURL: "https://netninja-pwa-tutorial.firebaseio.com",
+      projectId: "netninja-pwa-tutorial",
+      storageBucket: "netninja-pwa-tutorial.appspot.com",
+      messagingSenderId: "35010316471",
+      appId: "1:35010316471:web:405101ebc8a5cd9f"
+    };
+    // Initialize Firebase
+    firebase.initializeApp(firebaseConfig);
+    const db = firebase.firestore();
+  </script>
   <script src="/js/app.js"></script>
+  <script src="/js/db.js"></script>
   <script src="/js/ui.js"></script>
 
 </body>
