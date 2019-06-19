@@ -2,4 +2,6 @@
 
 The Net Ninja teaches the basics on Progressive Web Apps.
 
-YouTube link: https://youtu.be/4XT23X0Fjfk
+YouTube link: https://youtu.be/ezNvFzc0f30
+
+## Lesson 25 - Updating the UI
