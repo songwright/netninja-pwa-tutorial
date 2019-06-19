@@ -56,6 +56,10 @@ self.addEventListener('fetch', evt => {
         })
       });
     // If no page can load, use the fallback page.
-    }).catch(() => caches.match('/pages/fallback.html'))
+    }).catch(() => {
+      if(evt.request.url.indexOf('.html') > -1){
+        return caches.match('/pages/fallback.html');
+      }
+    })
   );
 });
