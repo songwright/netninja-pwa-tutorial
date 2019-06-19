@@ -55,24 +55,26 @@ self.addEventListener('activate', evt => {
 
 // fetch event
 self.addEventListener('fetch', evt => {
-  // console.log('fetch event', evt);
-  // evt.respondWith( // Fetch something from the cache, else
-  //   // fetch original request from server.
-  //   caches.match(evt.request).then(cacheRes => {
-  //     return cacheRes || fetch(evt.request).then(fetchRes => {
-  //       // Return requests started by user, put them in cache.
-  //       return caches.open(dynamicCacheName).then(cache => {
-  //         // Put a clone of request in cache, original in application
-  //         cache.put(evt.request.url, fetchRes.clone());
-  //         limitCacheSize(dynamicCacheName, 15);
-  //         return fetchRes;
-  //       })
-  //     });
-  //   // If no page can load, use the fallback page.
-  //   }).catch(() => {
-  //     if(evt.request.url.indexOf('.html') > -1){
-  //       return caches.match('/pages/fallback.html');
-  //     }
-  //   })
-  // );
+  // Only run fetch if firestore.googleapis.com is not in the request URL.
+  if(evt.request.url.indexOf('firestore.googleapis.com') === -1){
+    evt.respondWith( // Fetch something from the cache, else
+      // fetch original request from server.
+      caches.match(evt.request).then(cacheRes => {
+        return cacheRes || fetch(evt.request).then(fetchRes => {
+          // Return requests started by user, put them in cache.
+          return caches.open(dynamicCacheName).then(cache => {
+            // Put a clone of request in cache, original in application
+            cache.put(evt.request.url, fetchRes.clone());
+            limitCacheSize(dynamicCacheName, 15);
+            return fetchRes;
+          })
+        });
+      // If no page can load, use the fallback page.
+      }).catch(() => {
+        if(evt.request.url.indexOf('.html') > -1){
+          return caches.match('/pages/fallback.html');
+        }
+      })
+    );
+  }
 });
