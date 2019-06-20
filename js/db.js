@@ -42,3 +42,9 @@ form.addEventListener('submit', evt => {
   form.title.value = '';
   form.ingredients.value = '';
 });
+
+// delete a recipe
+const recipeContainer = document.querySelector('.recipes');
+recipeContainer.addEventListener('click', evt => {
+  console.log(evt);
+})
