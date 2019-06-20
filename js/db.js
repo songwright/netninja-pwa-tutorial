@@ -21,6 +21,7 @@ db.collection('recipes').onSnapshot((snapshot) => {
     }
     if(change.type === 'removed'){
       // remove the document from the web page
+      removeRecipe(change.doc.id);
     }
   });
 });
