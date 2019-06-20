@@ -8,7 +8,7 @@ db.enablePersistence()
       // lack of browser support
       console.log('Persistence is not available.');
     }
-  })
+  });
 
 // real-time listener
 db.collection('recipes').onSnapshot((snapshot) => {
@@ -22,5 +22,5 @@ db.collection('recipes').onSnapshot((snapshot) => {
     if(change.type === 'removed'){
       // remove the document from the web page
     }
-  })
+  });
 });
