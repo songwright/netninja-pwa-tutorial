@@ -33,7 +33,7 @@ form.addEventListener('submit', evt => {
 
   const recipe = {
     title: form.title.value,
-    ingredient: form.ingredients.value
+    ingredients: form.ingredients.value
   };
 
   db.collection('recipes').add(recipe)
