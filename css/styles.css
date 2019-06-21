@@ -19,6 +19,7 @@ nav a span{
 }
 nav .sidenav-trigger{
   margin: 0;
+  padding: 0;
 }
 
 /* recipe styles */
@@ -72,4 +73,8 @@ input{
 }
 form .input-field{
   margin-top: 30px;
+}
+
+.btn-flat {
+  color: #757575;
 }
