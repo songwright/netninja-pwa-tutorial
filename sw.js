@@ -31,7 +31,7 @@ self.addEventListener('install', evt => {
   // is done before installing the service worker.
   evt.waitUntil(
     caches.open(staticCacheName).then(cache => {
-      console.log('Caching shell assests');
+      // console.log('Caching shell assests');
       cache.addAll(assets);
     })
   );
