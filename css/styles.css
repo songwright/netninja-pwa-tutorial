@@ -59,6 +59,10 @@ nav .sidenav-trigger{
   font-size: 0.8em;
 }
 
+.recipe-ingredients span{
+  font-weight: bold;
+}
+
 /* form-styles */
 .add-btn{
   background: var(--title) !important;
