@@ -1,6 +1,6 @@
 {
-  "name": "Food Ninja",
-  "short_name": "FoodNinja",
+  "name": "Ramon's Recipes",
+  "short_name": "R's Recipes",
   "start_url": "/index.html",
   "display": "standalone",
   "background_color": "#d1d5ff",
