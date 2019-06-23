@@ -1,5 +1,5 @@
 const staticCacheName = 'site-static-v4';
-const dynamicCacheName = 'site-dynamic-v7';
+const dynamicCacheName = 'site-dynamic-v8';
 const assets = [
   '/',
   '/js/app.js',
