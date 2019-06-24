@@ -36,6 +36,7 @@ nav .sidenav-trigger{
   position: relative;
 }
 .recipe img{
+  grid-area: image;
   display: grid;
   justify-self: center;
   align-self: center;
