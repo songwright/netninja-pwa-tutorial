@@ -35,8 +35,14 @@ nav .sidenav-trigger{
   grid-template-areas: "image details delete";
   position: relative;
 }
-.recipe img{
+.recipe-image{
   grid-area: image;
+  display: grid;
+  justify-items: center;
+  align-items: center;
+}
+.recipe img{
+
   max-width: 60px;
 }
 .recipe-details{
