@@ -42,7 +42,6 @@ nav .sidenav-trigger{
   align-items: center;
 }
 .recipe img{
-
   max-width: 60px;
 }
 .recipe-details{
@@ -60,11 +59,12 @@ nav .sidenav-trigger{
   cursor: pointer;
 }
 .recipe-title{
+  font-size: 1.2em;
   font-weight: bold;
 }
-.recipe-ingredients{
+/* .recipe-ingredients{
   font-size: 0.8em;
-}
+} */
 
 .recipe-ingredients span{
   font-weight: bold;
