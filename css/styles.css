@@ -1,8 +1,8 @@
 /* colours */
 :root{
-  --primary: rgb(209, 213, 255);
-  --secondary: rgb(194, 199, 255);
-  --title: rgb(20, 40, 255);
+  --primary: hsla(215, 100%, 91%, 1);
+  --secondary: hsla(215, 100%, 88%, 1);
+  --title: hsla(215, 100%, 54%, 1);
 }
 
 /* layout styles */
