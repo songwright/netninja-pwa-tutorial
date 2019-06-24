@@ -3,8 +3,8 @@
   "short_name": "R's Recipes",
   "start_url": "/index.html",
   "display": "standalone",
-  "background_color": "#d1d5ff",
-  "theme_color": "#c2c7ff",
+  "background_color": "hsla(215, 100%, 91%, 1)",
+  "theme_color": "hsla(215, 100%, 88%, 1)",
   "orientation": "portrait-primary",
   "icons": [
     {
