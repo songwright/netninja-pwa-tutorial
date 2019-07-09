@@ -2,9 +2,9 @@
 
 The Net Ninja teaches the basics on Progressive Web Apps.
 
-YouTube link: https://youtu.be/ciu62KLlwGQ
-
 ## Lesson 26 - Offline Data
+
+YouTube link: https://youtu.be/ciu62KLlwGQ
 
 The Net Ninja explains what’s happening so far. The real-time listener is listening for changes in the firestore database (added types and removed types). Whenever the app is loaded or reloaded, the listener gets the changes from the firestore database. The app takes the changes and puts them in the DOM. New changes made to the database will appear in the DOM as they occur. This happens when the app is online. Nothing happens when it is offline. Using the service worker to chache the data is not practical because the service worker might serve old data from the cache. The solution is to use the __IndexedDB__ feature in the browser. __IndexedDB__ can synchronize offline data, i.e., local changes, with firestore.
 
