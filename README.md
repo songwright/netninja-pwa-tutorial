@@ -2,8 +2,8 @@
 
 The Net Ninja teaches the basics on Progressive Web Apps.
 
-## Lesson 13 - The Install Banner
+## Lesson 14 - Offline Mode Explained
 
-YouTube link: https://youtu.be/9whdWJ4q7jE
+YouTube link: https://youtu.be/Vz1D28zshaI
 
-When certain conditions in the PWA satisfy Googe’s standards, an install banner will appear on an Android device. If the user clicks on the banner, the phone will put an icon for the PWA on the phone’s home screen.
+The Net Ninja explains how caching assets works. This isn’t the browser cache, which gets stored automatically. This is the cache created by the service worker. Pre-caching happens when the service worker saves copies of assets requested from a server in the cache. It can serve these assets to the browser when the server is offline.
