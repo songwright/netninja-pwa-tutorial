@@ -6,4 +6,4 @@ The Net Ninja teaches the basics on Progressive Web Apps.
 
 YouTube link: https://youtu.be/9whdWJ4q7jE
 
-When certain conditions in the PWA satisfy Googe’s standards, an install banner will appear on an Android device. If the user clicks on the banner, the phone will put an icon for the PWA on the phone’s home screen.
+When certain conditions in the PWA satisfy Google’s standards, an install banner will appear on an Android device. If the user clicks on the banner, the phone will put an icon for the PWA on the phone’s home screen.
