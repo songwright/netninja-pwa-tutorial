@@ -2,7 +2,7 @@
 
 The Net Ninja teaches the basics on Progressive Web Apps.
 
-Lesson 28 - Deleting Recipes
+## Lesson 28 - Deleting Recipes
 
 YouTube link: https://youtu.be/zdb8_a0DXTg
 
