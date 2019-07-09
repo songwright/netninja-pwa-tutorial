@@ -10,6 +10,6 @@ Up to this point, the recipes in the app have been placeholders for the real thi
 
 In the console for the database, on “Project Overview,” he adds an app backend for the recipes app on the front end. This lets him register the app, resulting in code which is called “Firebase SDK.” This code gets added to the index.html. The code has a link to the firebase, but the Net Ninja adds a line for a link to the firestore:
 
-<script src="https://www.gstatic.com/firebasejs/6.2.0/firebase-firestore.js"></script>
+```<script src="https://www.gstatic.com/firebasejs/6.2.0/firebase-firestore.js"></script>```
 
 The __firebaseConfig__ object contains the codes needed to connect this app to Firebase, including the API key. Under this code, the Net Ninja adds a line to store the database in a constant called __db__ to initialize the database in the front end. He also creates a new file called db.js to store logic for the database.
