@@ -2,8 +2,8 @@
 
 The Net Ninja teaches the basics on Progressive Web Apps.
 
-## Lesson 12 - Fetch Events
+## Lesson 13 - The Install Banner
 
-YouTube link: https://youtu.be/C0vh57N7vM4
+YouTube link: https://youtu.be/9whdWJ4q7jE
 
-The Net Ninja writes an event listener in sw.js that listens for fetch events from the browser. The callback function in the listener logs fetch events in the console. The log shows that there were many fetch requests and the listener logged them.
+When certain conditions in the PWA satisfy Googe’s standards, an install banner will appear on an Android device. If the user clicks on the banner, the phone will put an icon for the PWA on the phone’s home screen.
