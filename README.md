@@ -2,6 +2,10 @@
 
 The Net Ninja teaches the basics on Progressive Web Apps.
 
+## Lesson 27 - Adding Recipes
+
 YouTube link: https://youtu.be/BHCk5TSNUkI
 
-## Lesson 27 - Adding Recipes
+The Net Ninja creates a link between the DOM and the database to set up a method for adding recipes to the database from the front end. The side form in the index.html uses the `<form>` semantic tag. In the db.js file, the Net Ninja adds a constant called __form__ that uses a query selector to point at the `<form>` tag. Next he makes an event listener that listens for a submit event on the __form__ constant. The “submit” event usually refreshes the page, so he puts the __.preventDefault()__ method on the event to stop that. Next, he makes an object that represents the recipe. The title and ingredients in the UI will get submitted into this JavaScript object, called __recipe__ in the function. Because the input for the title in the index.html file has an i.d. of “title” and because the form is already stored in a variable, he uses __.title__ as a method on __form__ for the value of the first property in the object and __.value__ as a method on __.title__. The value comes from the input. He does something similar for the ingredients input. To add the new recipe to the database, he uses __db.collection(‘recipes’).add(recipe)__. A __.catch__ logs rejected promises in the console. To reset the form, he sets the values of the inputs to empty strings.
+
+He changed the db.js file, which is supposed to be cached in the dynamic cache, so in the service worker he updates the version of the dynamic cache to v3. Now, if a user adds a recipe using the form, db.js will pass the values to the firestore database. The __.onSnapshot__ method in the db.js file will detect the new document added to the database. This will also work when the app is offline because persistence has been enabled because  is listening to changes in __IndexedDB__. Local data will be synched with the firestore database when the app goes back online.
