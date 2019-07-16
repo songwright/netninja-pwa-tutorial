@@ -87,3 +87,8 @@ form .input-field{
 .btn-flat {
   color: #757575;
 }
+
+.main-image {
+  width: 100%;
+  height: auto;
+}
