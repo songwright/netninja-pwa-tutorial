@@ -95,3 +95,9 @@ form .input-field{
   width: 50%;
   height: auto;
 }
+
+@media screen and (max-width: 375px){
+  h5 {
+    font-size: 1em;
+  }
+}
