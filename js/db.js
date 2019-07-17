@@ -1,5 +1,5 @@
 // Enable offline data
-db.enablePersistence()
+db.enablePersistence({ synchronizeTabs: true })
   .catch(err => {
     if(err.code == 'failed-precondition'){
       // probably multiple tabs open at once
