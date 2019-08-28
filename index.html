@@ -23,12 +23,20 @@
   <nav class="z-depth-0">
     <div class="nav-wrapper container">
       <a href="/">Ramon's <span>Recipes</span></a>
-      <!-- <span class="right grey-text text-darken-1"> -->
-      <span class="right">
-        <a>
-          <i class="material-icons btn-flat sidenav-trigger" data-target="side-menu">menu</i>
-        </a>
-      </span>
+      <ul class="right">
+        <li class="logged-in">
+          <a href="#" class="blue-text" id="logout">Logout</a>
+        </li>
+        <li class="logged-out">
+          <a href="#" class="blue-text modal-trigger" data-target="modal-login">Login</a>
+        </li>
+        <li class="logged-out">
+          <a href="#" class="blue-text modal-trigger" data-target="modal-signup">Sign up</a>
+        </li>
+        <li>
+            <i class="material-icons btn-flat sidenav-trigger" data-target="side-menu">menu</i>
+        </li>
+      </ul>
     </div>
   </nav>
 
