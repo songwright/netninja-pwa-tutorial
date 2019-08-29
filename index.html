@@ -25,6 +25,9 @@
       <a href="/">Ramon's <span>Recipes</span></a>
       <ul class="right">
         <li class="logged-in">
+          <a href="#" class="blue-text modal-trigger" data-target="modal-account">Account</a>
+        </li>
+        <li class="logged-in">
           <a href="#" class="blue-text" id="logout">Logout</a>
         </li>
         <li class="logged-out">
@@ -117,6 +120,14 @@
         <button class="btn yellow darken-2 z-depth-0">Login</button>
         <p class="error pink-text center-align"></p>
       </form>
+    </div>
+  </div>
+
+  <!-- ACCOUNT MODAL -->
+  <div id="modal-account" class="modal">
+    <div class="modal-content center-align">
+      <h4>Account details</h4><br />
+      <div class="account-details"></div>
     </div>
   </div>
 

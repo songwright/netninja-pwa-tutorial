@@ -1,4 +1,4 @@
-const staticCacheName = 'site-static-v7';
+const staticCacheName = 'site-static-v2';
 const dynamicCacheName = 'site-dynamic-v9';
 const assets = [
   '/',
@@ -8,6 +8,7 @@ const assets = [
   '/js/materialize.min.js',
   '/css/styles.css',
   '/css/materialize.min.css',
+  '/img/icons/icon-512x512.png',
   '/img/dish.png',
   'https://fonts.googleapis.com/icon?family=Material+Icons',
   'https://fonts.gstatic.com/s/materialicons/v47/flUhRq6tzZclQEJ-Vdg-IuiaDsNc.woff2',
