@@ -2,6 +2,16 @@
 
 The Net Ninja teaches the basics on Progressive Web Apps.
 
-YouTube link: https://youtu.be/4XT23X0Fjfk
+This and the following lessons are based on the Net Ninja's Firebase Auth tutorial.
 
-For details on each lesson, select a branch.
+## Auth Lesson 4 - Setting up Firebase Locally
+
+YouTube link: https://youtu.be/rOqvU46sdoU
+
+The Net Ninja shows you how to set up the Firebase database on firebase.google.com. In the video, he copies and pastes a code snippet from Firebase to his index.html file. The index.html file in my PWA already has that snippet, so that step was unnecessary. I added a link to Firebase auth:
+
+`<script src="https://www.gstatic.com/firebasejs/6.2.0/firebase-auth.js"></script>`
+
+I also stored the auth service in a constant called __auth__.
+
+`const auth = firebase.auth();`
