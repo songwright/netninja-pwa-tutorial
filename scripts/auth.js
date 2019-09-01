@@ -2,8 +2,10 @@
 auth.onAuthStateChanged(user => {
   if (user) {
     console.log('User logged in.', user);
+    displayMenuLinks(user);
   } else {
     console.log('User logged out.');
+    displayMenuLinks();
   }
 });
 
