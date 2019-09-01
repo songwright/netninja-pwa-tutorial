@@ -4,7 +4,7 @@ The Net Ninja teaches the basics on Progressive Web Apps.
 
 This and the following lessons are based on the Net Ninja's Firebase Auth tutorial.
 
-## Auth Lesson Getting Firestore Data
+## Auth Lesson 9 - Getting Firestore Data
 
 YouTube link: https://youtu.be/kIVg_yTiO3Q
 
@@ -14,4 +14,4 @@ db.collection('guides').get().then(snapshot => {
   setupGuides(snapshot.docs);
 });
 ```
-He sets up the __setupGuides__ function in his index.js file to append a block of HTML to the web page when the app gets data from the database. The HTML is a list item containing the title and content for a guide.
+He creates the __setupGuides__ function in his index.js file to append a block of HTML to the web page when the app gets data from the database. The HTML is a list item containing the title and content for a guide.
