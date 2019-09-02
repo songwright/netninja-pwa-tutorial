@@ -4,7 +4,7 @@ The Net Ninja teaches the basics on Progressive Web Apps.
 
 This and the following lessons are based on the Net Ninja's Firebase Auth tutorial.
 
-## Auth Lesson 3 – HTML Template Setup
+## Auth Lesson 10 - UI & Firestore Security Rules
 
 YouTube link: https://youtu.be/d0RK2bpRVgo
 
