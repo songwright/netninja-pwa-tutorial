@@ -97,6 +97,12 @@ form .input-field{
 }
 
 @media screen and (max-width: 375px){
+  nav {
+    font-size: 0.8em;
+  }
+  nav ul a {
+    font-size: 0.8em;
+  }
   h5 {
     font-size: 1em;
   }
