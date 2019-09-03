@@ -38,7 +38,7 @@ form.addEventListener('submit', evt => {
   };
 
   db.collection('recipes').add(recipe)
-    .catch(err => console.log(err))
+    .catch(err => console.log(err.message))
     .catch(alert('You must log in to create a recipe.'))
 
   form.title.value = '';
