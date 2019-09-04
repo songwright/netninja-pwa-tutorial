@@ -18,11 +18,15 @@ signupForm.addEventListener('submit', (e) => {
 
   // Sign up the user.
   auth.createUserWithEmailAndPassword(email, password).then(cred => {
+    return db.collection('users').doc(cred.user.uid).set({
+      username: signupForm['signup-username'].value
+    });
+  }).then(() => {
     const modal = document.querySelector('#modal-signup');
     M.Modal.getInstance(modal).close();
     signupForm.reset();
-  })
-})
+  });
+});
 
 // logout
 const logout = document.querySelector('#logout');
