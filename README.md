@@ -2,6 +2,8 @@
 
 The Net Ninja teaches the basics on Progressive Web Apps.
 
+This and the following lessons are based on the Net Ninja's Firebase Auth tutorial.
+
 ## Auth Lesson 12 – Adding Guides
 
 YouTube link: https://youtu.be/rgBDotX_65Q
