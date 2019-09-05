@@ -15,6 +15,7 @@ The Net Ninja changes the rules in the Database tab on his Firestore database. H
     }
 ```
 Another rule allows a user to read a document in this database only if the i.d. of the document is the same as the user i.d.
+```
     match /users/{userID} {
       allow create: if request.auth.uid != null;
       allow read: if request.auth.uid == userID;
