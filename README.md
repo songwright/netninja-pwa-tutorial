@@ -21,7 +21,7 @@ Firebase Auth
 
 All users get basic data such as the user i.d. and e-mail address. Custom claims can give a user special roles such as “premium” that most users don’t have.
 
-When we send the user token back and forth from the client to the server and vice-versa, we can access that claim on both the server and on the clients. We can use that claim to either protect the database or update the UI on the part of the front end that depends on that claim. For example, we could restrict write access to only users with an admin claim of true. On the front end, we could show admins a UI that is different from what ordinary users see. You set claims on a user to, for example, make someone an admin, you do it on the server (the “back end”). For this you need to use cloud functions.
+When we send the user token back and forth from the client to the server and vice-versa, we can access that claim on both the server and on the clients. We can use that claim to either protect the database or update the UI on the part of the front end that depends on that claim. For example, we could restrict write access to only users with an admin claim of true. On the front end, we could show admins a UI that is different from what ordinary users see. If you want to set claims on a user to, for example, make someone an admin, you do it on the server (the “back end”). For this you need to use cloud functions.
 
 Cloud Functions
 *	Cloud functions run on the server
