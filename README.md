@@ -16,8 +16,8 @@ Firebase Auth
 *	User i.d.
 *	E-mail
 *	CUSTOM CLAIMS
-  * admin: true
-  * premium: true
+    * admin: true
+    * premium: true
 
 All users get basic data such as the user i.d. and e-mail address. Custom claims can give a user special roles such as “premium” that most users don’t have.
 
