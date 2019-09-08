@@ -52,3 +52,5 @@ into the terminal. This installs Firebase tools globally on his computer allows 
 `“Do you want to install the dependencies with npm now?”` Answer yes. Press enter to install.
 
 This will initialize Firebase tools. Firebase will install node modules as well as some extra files, including a file called “index.js” in the “functions” folder. The Net Ninja says that we will change this file later.
+
+Firebase adds some extra files after the installation is finished. A file called “.firebasrc” contains information that connects this installation to the Firebase project online. The firebase.json file contains extra configuration data. It starts out empty. A new folder called “functions” contains the “node modules” folder, two JSON files, and another index.js file (the file called “.gitignore” is for Git configuration). Node modules contains many megabytes of dependencies needed for Firebase tools. The “package.json” file contains data for those dependencies. The index.js file is where we’re going to create our cloud function and then deploy it. Currently, a cloud function exists in this file, but it is commented out.
